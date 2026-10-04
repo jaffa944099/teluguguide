@@ -24,11 +24,13 @@ Open http://localhost:8000. All local asset links are relative, so the site work
 
 ## GitHub Pages
 
-In repository **Settings → Pages**, select **Deploy from a branch**, branch **main**, folder **/ (root)**, then save. The `.nojekyll` file enables plain static hosting. The website source lives at the repository root; research screenshots and development checks are not part of the published site.
+The website is published at https://jaffa944099.github.io/teluguguide/ using the workflow in `.github/workflows/pages.yml`. In repository **Settings → Pages**, the source is **GitHub Actions**. Every push to `main` deploys the site; the workflow can also be run manually from the **Actions** tab.
+
+The deployment includes only the website HTML, CSS, JavaScript and assets. Documentation, research files and Git metadata are excluded from the published artifact.
 
 ## Move to a separate domain later
 
-1. Set your custom domain in repository **Settings → Pages**. GitHub creates a `CNAME` file containing that domain.
+1. Set your custom domain in repository **Settings → Pages**. This workflow uses GitHub Actions, so no `CNAME` file is required for deployment.
 2. Configure the domain's DNS using the current [GitHub Pages custom-domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
 3. Complete domain verification, then enable **Enforce HTTPS** when GitHub makes it available.
 4. Add the final domain as the canonical URL and update social-sharing metadata after the domain is selected.
