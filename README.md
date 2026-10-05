@@ -2,6 +2,8 @@
 
 A responsive English and Telugu website for the Varanasi tour agency listed at https://share.google/xsclolIkkXBpQ6PhG.
 
+Live website: **https://kashiteluguguide.pages.dev/**
+
 ## Website features
 
 - Destination photography, interest filters and travel guidance.
