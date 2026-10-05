@@ -23,7 +23,7 @@ https://www.google.com/maps/place/Kaashi+telugu+guide/@25.3036473,82.9850994,17z
 
 ## Website content
 
-Business details above were verified. Destination descriptions are editorial travel suggestions, not verified packages. No tour prices, certifications, testimonials or booking guarantees are claimed.
+Business details above were verified. Destination descriptions are editorial travel suggestions, not verified packages. No tour prices, certifications or booking guarantees are claimed. Selected Google review excerpts and attributed summaries were added after the user supplied source screenshots, as recorded below.
 
 ## Photography
 
@@ -39,4 +39,24 @@ The same public Google Maps listing response contains a merchant description: �
 
 ## Google reviews access
 
-The accessible public Maps view showed a sign-in prompt for reviews and photos. No review text, authors or dates could be verified, so no review quotations, ratings, or review-based praise have been published. Review highlights remain pending source text from the user.
+The initial accessible public Maps view showed a sign-in prompt for reviews and photos. Review text was subsequently supplied by the user in the screenshots below; the website uses those screenshots as its review source.
+
+## User-supplied Google reviews (2026-10-05)
+
+The user supplied `75854.jpg` and `75853.jpg` as screenshots of Google reviews for the guide. Both show five stars. The first displays “3 months ago”; the second “a month ago”. Exact calendar dates are not established, so no dates are presented on the website. Reviewer display names are too faint to transcribe confidently and are omitted. No aggregate rating or total review count is inferred from these two screenshots.
+
+### Screenshot 75854.jpg
+
+Published exact excerpt: “He was extremely friendly and made us feel like we were traveling with a family member rather than a guide.”
+
+The surrounding review also praises clear explanations of history and culture, Telugu communication, patience, helpfulness and attention to comfort.
+
+### Screenshot 75853.jpg
+
+Published exact excerpt: “Having a dedicated, honest Telugu-speaking guide who stays by your side throughout the trip made the pilgrimage completely stress-free and comfortable for our family.”
+
+This review explicitly identifies Raju from “Kashi telugu guide”. It describes local navigation, coordinating a Ganga boat ride and temple visits, local transport and transport to Prayagraj. Statements about prices, avoided delays and individual arrangements are the reviewer’s experience; the website does not turn them into guarantees or fixed inclusions.
+
+### Presentation
+
+The English excerpts preserve the original wording. Telugu excerpts are translations and are labeled accordingly. Positive themes are attributed to these two reviewers. Kaif’s identity as Raju remains based on the user’s confirmation. The source screenshots are retained in the conversation and are not republished as images.
