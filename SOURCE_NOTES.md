@@ -60,3 +60,17 @@ This review explicitly identifies Raju from “Kashi telugu guide”. It describ
 ### Presentation
 
 The English excerpts preserve the original wording. Telugu excerpts are translations and are labeled accordingly. Positive themes are attributed to these two reviewers. Kaif’s identity as Raju remains based on the user’s confirmation. The source screenshots are retained in the conversation and are not republished as images.
+
+## User-supplied trip photographs (2026-10-05)
+
+The user requested publication of five attached photographs. The original JPEG files are copied without alteration and displayed at their natural aspect ratios, with links to the full images. Captions describe the scenes without naming individual people, precise locations or dates. The pictured people are not presented as authors of the Google reviews. No identification by face comparison was performed.
+
+| Supplied file | Website asset | Scene |
+| --- | --- | --- |
+| 73930.jpg | assets/guest-station.jpg | Group with luggage beside a train at night |
+| 73926.jpg | assets/guest-riverside.jpg | Group on a rocky riverbank |
+| 73924.jpg | assets/guest-tea.jpg | Selfie beside a tea stall |
+| 73922.jpg | assets/guest-platform.jpg | Group selfie on a railway platform |
+| 73939.jpg | assets/guest-airport.jpg | Group with luggage at entrance D2 |
+
+These supplied photographs are distinct from the licensed destination photographs listed in `credits.html`. English and Telugu captions and alt text are provided. Combined asset size is 665,173 bytes; loading is deferred until the images approach the viewport.

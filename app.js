@@ -2,6 +2,8 @@
 
 const translations = {
   te: {
+    tripPhotosLink: 'యాత్ర ఫోటోలు చూడండి ↗', photosEyebrow: 'యాత్రలోని మధుర క్షణాలు', photosTitle: 'ఆప్యాయమైన తోడు.<br>నిలిచిపోయే జ్ఞాపకాలు.', photosIntro: 'నదీ తీరంలో విహారం, టీ కోసం చిన్న విరామం, స్టేషన్‌లో వీడ్కోలు. కాశీ తెలుగు గైడ్‌తో యాత్రల్లోని కొన్ని జ్ఞాపకాలు.', photosHint: 'పూర్తి ఫోటోను కొత్త ట్యాబ్‌లో చూడటానికి దానిపై నొక్కండి.',
+    photoRiverCaption: 'నదీ తీరంలో విహారం', photoRiverAlt: 'చెట్లు, ప్రవహించే నీటి నేపథ్యంలో రాతి నదీ తీరంలో ఏడుగురు కలిసి దిగిన ఫోటో', photoPlatformCaption: 'ప్లాట్‌ఫారమ్‌పై కలిసి', photoPlatformAlt: 'రైల్వే ప్లాట్‌ఫారమ్‌పై ఆరుగురు కలిసి తీసుకున్న సెల్ఫీ', photoStationCaption: 'స్టేషన్‌లో ఒక జ్ఞాపకం', photoStationAlt: 'రాత్రివేళ రైలు పక్కన సామానుతో నలుగురు కలిసి దిగిన ఫోటో', photoTeaCaption: 'టీతో చిన్న విరామం', photoTeaAlt: 'టీ దుకాణం దగ్గర ఇద్దరు తీసుకున్న సెల్ఫీ; ఒకరి చేతిలో చిన్న మట్టి కప్పు', photoAirportCaption: 'ప్రయాణానికి సిద్ధం', photoAirportAlt: 'విమానాశ్రయంలో D2 ప్రవేశ ద్వారం బయట సామానుతో ముగ్గురు కలిసి దిగిన ఫోటో',
     skip: 'విషయానికి వెళ్లండి', navDiscover: 'కాశీని చూడండి', navAbout: 'కైఫ్‌ను కలవండి', navReviews: 'సమీక్షలు', navFaq: 'తెలుసుకోవాల్సినవి', planVisit: 'మీ యాత్రను ప్లాన్ చేయండి ↗',
     heroEyebrow: 'వారణాసి, భారతదేశం · శాశ్వతమైన అనుభూతి', heroTitle: 'చూడాల్సిన నగరం.<br>అనుభూతి చెందాల్సిన కాశీ.', heroCopy: 'గంగా నది. పూజలు. చిన్న వీధులు.<br>మీరు చూడాలనుకున్న కాశీకి మరింత చేరువగా.', explore: 'కాశీని చూడండి ↗', heroBottom: 'కైఫ్ (రాజు)తో మీ యాత్ర · కాశీ తెలుగు గైడ్', heroCaption: 'గంగా తీరంలో,<br>ప్రతి రోజూ ఒక కొత్త కథ.', introStrip: 'ఒక నగరం. ఎన్నో అనుభవాలు.',
     discoverEyebrow: 'మీ కాశీని కనుగొనండి', discoverTitle: 'మీ ఆసక్తిని అనుసరించండి.', discoverCopy: 'పవిత్ర ప్రదేశాలు, ప్రశాంతమైన నదీ తీరం, పూజలతో కళకళలాడే నగరం. మీకు నచ్చిన అనుభవంతో మొదలుపెట్టండి.', filterAll: 'అన్ని అనుభవాలు', filterRiver: 'నదీ తీరంలో', filterSpiritual: 'ఆధ్యాత్మిక కాశీ', filterCulture: 'పూజలు & స్థానిక జీవనం',
@@ -21,6 +23,8 @@ const originals = new Map();
 document.querySelectorAll('[data-i18n]').forEach(element => originals.set(element, element.innerHTML));
 const placeholderOriginals = new Map();
 document.querySelectorAll('[data-i18n-placeholder]').forEach(element => placeholderOriginals.set(element, element.placeholder));
+const altOriginals = new Map();
+document.querySelectorAll('[data-i18n-alt]').forEach(element => altOriginals.set(element, element.alt));
 const languageButton = document.getElementById('language-toggle');
 const menuButton = document.getElementById('menu-toggle');
 const navigation = document.getElementById('navigation');
@@ -36,6 +40,7 @@ function setLanguage(nextLanguage) {
   document.documentElement.lang = language;
   originals.forEach((original, element) => { element.innerHTML = (language === 'te' ? translations.te[element.dataset.i18n] || original : original).replaceAll('↗', arrowIcon); });
   placeholderOriginals.forEach((original, element) => { element.placeholder = language === 'te' ? translations.te[element.dataset.i18nPlaceholder] || original : original; });
+  altOriginals.forEach((original, element) => { element.alt = language === 'te' ? translations.te[element.dataset.i18nAlt] || original : original; });
   languageButton.innerHTML = language === 'te' ? `English ${arrowIcon}` : `తెలుగు ${arrowIcon}`;
   languageButton.setAttribute('aria-label', language === 'te' ? 'Switch to English' : 'Switch to Telugu');
   updateMenuLabel();
