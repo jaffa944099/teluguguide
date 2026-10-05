@@ -74,3 +74,16 @@ The user requested publication of five attached photographs. The original JPEG f
 | 73939.jpg | assets/guest-airport.jpg | Group with luggage at entrance D2 |
 
 These supplied photographs are distinct from the licensed destination photographs listed in `credits.html`. English and Telugu captions and alt text are provided. Combined asset size is 665,173 bytes; loading is deferred until the images approach the viewport.
+
+### Additional photographs
+
+A second batch supplied four new photographs and another copy of `73922.jpg`. The repeated platform photo is byte-for-byte identical to `assets/guest-platform.jpg`, so it is displayed once. The gallery now contains nine unique photographs.
+
+| Supplied file | Website asset | Scene |
+| --- | --- | --- |
+| 73915.jpg | assets/guest-temple-visit.jpg | Group on the steps outside a temple |
+| 73917.jpg | assets/guest-terminal.jpg | Three people with a suitcase at a terminal entrance |
+| 73909.jpg | assets/guest-airport-group.jpg | Group outside an airport near luggage trolleys |
+| 73919.jpg | assets/guest-evening.jpg | Group beside travel bags at night |
+
+The four new originals add 823,752 bytes, making the complete gallery 1,488,925 bytes. They are published without alteration, with full-image links, deferred loading and English/Telugu scene captions and alt text. No person identification is added.
