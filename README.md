@@ -22,20 +22,16 @@ python3 -m http.server 8000
 
 Open http://localhost:8000. All local asset links are relative, so the site works on GitHub Pages project paths as well as a domain root.
 
-## GitHub Pages
+## Cloudflare Pages
 
-The website is published at https://jaffa944099.github.io/teluguguide/ using the workflow in `.github/workflows/pages.yml`. In repository **Settings → Pages**, the source is **GitHub Actions**. Every push to `main` deploys the site; the workflow can also be run manually from the **Actions** tab.
+The workflow `.github/workflows/cloudflare-pages.yml` deploys the same static website to Cloudflare Pages on each push to `main`, or when run manually in GitHub Actions. It uses these repository secrets:
 
-The deployment includes only the website HTML, CSS, JavaScript and assets. Documentation, research files and Git metadata are excluded from the published artifact.
+- `CLOUDFLARE_ACCOUNT_ID`: the target Cloudflare Account ID.
+- `CLOUDFLARE_API_TOKEN`: a token scoped to that account with **Account → Cloudflare Pages → Edit** permission.
 
-## Move to a separate domain later
+The first run creates the `kashiteluguguide` Direct Upload project; later runs reuse it. The project is marked with the source repository so the workflow will not overwrite an unrelated existing project with the same name. The workflow summary contains the production URL returned by Cloudflare. Credentials stay in GitHub Secrets and are excluded from website artifacts.
 
-1. Set your custom domain in repository **Settings → Pages**. This workflow uses GitHub Actions, so no `CNAME` file is required for deployment.
-2. Configure the domain's DNS using the current [GitHub Pages custom-domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
-3. Complete domain verification, then enable **Enforce HTTPS** when GitHub makes it available.
-4. Add the final domain as the canonical URL and update social-sharing metadata after the domain is selected.
-
-No custom domain is configured yet. There is no server to migrate.
+For a custom domain on Cloudflare, open **Workers & Pages → the project → Custom domains → Set up a custom domain**, then follow Cloudflare's DNS instructions. Do this through the project before manually adding a DNS record. GitHub stores the source and runs this deployment workflow; automatic publishing goes to Cloudflare Pages only. All website asset paths are relative, so a custom domain does not require rewriting them.
 
 ## Updating content
 
