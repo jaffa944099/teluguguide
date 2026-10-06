@@ -87,3 +87,9 @@ A second batch supplied four new photographs and another copy of `73922.jpg`. Th
 | 73919.jpg | assets/guest-evening.jpg | Group beside travel bags at night |
 
 The four new originals add 823,752 bytes, making the complete gallery 1,488,925 bytes. They are published without alteration, with full-image links, deferred loading and English/Telugu scene captions and alt text. No person identification is added.
+
+## Pilgrim reassurance copy (2026-10-06)
+
+The user supplied proposed copy describing elder care, Sugam/VIP darshan planning, Telugu explanations, vegetarian meals, transport and Telugu pandit coordination. These themes are adapted into “Why Telugu families trust us”, immediately below the About section, in English and Telugu. Practical arrangements are framed as matters to discuss and confirm with Raju, including mobility needs, official temple bookings, dietary preferences, availability and charges.
+
+The proposed “100+ Google reviews”, aggregate five-star rating, hundreds of past guests and claimed frequency of specific review themes were not independently established. They are not published. The additional proposed testimonial has no reviewer or original review source and is not used. The two previously supplied screenshot excerpts remain the only direct testimonials, with their individual ratings and translation labels intact. No guaranteed crowd skipping, darshan duration, hygiene standard or absence of extra charges is promised.
